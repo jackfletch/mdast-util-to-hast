@@ -57,29 +57,37 @@ test('FootnoteMixed', function(t) {
       u('element', {tagName: 'ol', properties: {}}, [
         u('text', '\n'),
         u('element', {tagName: 'li', properties: {id: 'fn-1'}}, [
-          u('text', 'Charlie'),
-          u('text', ' '),
-          u(
-            'element',
-            {
-              tagName: 'a',
-              properties: {href: '#fnref-1', className: ['footnote-backref']}
-            },
-            [u('text', '↩')]
-          )
+          u('text', '\n'),
+          u('element', {tagName: 'p', properties: {}}, [
+            u('text', 'Charlie'),
+            u('text', ' '),
+            u(
+              'element',
+              {
+                tagName: 'a',
+                properties: {href: '#fnref-1', className: ['footnote-backref']}
+              },
+              [u('text', '↩')]
+            )
+          ]),
+          u('text', '\n')
         ]),
         u('text', '\n'),
         u('element', {tagName: 'li', properties: {id: 'fn-x'}}, [
-          u('text', 'Delta'),
-          u('text', ' '),
-          u(
-            'element',
-            {
-              tagName: 'a',
-              properties: {href: '#fnref-x', className: ['footnote-backref']}
-            },
-            [u('text', '↩')]
-          )
+          u('text', '\n'),
+          u('element', {tagName: 'p', properties: {}}, [
+            u('text', 'Delta'),
+            u('text', ' '),
+            u(
+              'element',
+              {
+                tagName: 'a',
+                properties: {href: '#fnref-x', className: ['footnote-backref']}
+              },
+              [u('text', '↩')]
+            )
+          ]),
+          u('text', '\n')
         ]),
         u('text', '\n')
       ]),

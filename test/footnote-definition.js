@@ -48,19 +48,23 @@ test('FootnoteDefinition', function(t) {
         u('element', {tagName: 'ol', properties: {}}, [
           u('text', '\n'),
           u('element', {tagName: 'li', properties: {id: 'fn-zulu'}}, [
-            u('text', 'alpha'),
-            u('text', ' '),
-            u(
-              'element',
-              {
-                tagName: 'a',
-                properties: {
-                  href: '#fnref-zulu',
-                  className: ['footnote-backref']
-                }
-              },
-              [u('text', '↩')]
-            )
+            u('text', '\n'),
+            u('element', {tagName: 'p', properties: {}}, [
+              u('text', 'alpha'),
+              u('text', ' '),
+              u(
+                'element',
+                {
+                  tagName: 'a',
+                  properties: {
+                    href: '#fnref-zulu',
+                    className: ['footnote-backref']
+                  }
+                },
+                [u('text', '↩')]
+              )
+            ]),
+            u('text', '\n')
           ]),
           u('text', '\n')
         ]),

@@ -26,16 +26,23 @@ test('Footnote', function(t) {
         u('element', {tagName: 'ol', properties: {}}, [
           u('text', '\n'),
           u('element', {tagName: 'li', properties: {id: 'fn-1'}}, [
-            u('text', 'bravo'),
-            u('text', ' '),
-            u(
-              'element',
-              {
-                tagName: 'a',
-                properties: {href: '#fnref-1', className: ['footnote-backref']}
-              },
-              [u('text', '↩')]
-            )
+            u('text', '\n'),
+            u('element', {tagName: 'p', properties: {}}, [
+              u('text', 'bravo'),
+              u('text', ' '),
+              u(
+                'element',
+                {
+                  tagName: 'a',
+                  properties: {
+                    href: '#fnref-1',
+                    className: ['footnote-backref']
+                  }
+                },
+                [u('text', '↩')]
+              )
+            ]),
+            u('text', '\n')
           ]),
           u('text', '\n')
         ]),
@@ -85,29 +92,43 @@ test('Footnote', function(t) {
         u('element', {tagName: 'ol', properties: {}}, [
           u('text', '\n'),
           u('element', {tagName: 'li', properties: {id: 'fn-1'}}, [
-            u('text', 'bravo'),
-            u('text', ' '),
-            u(
-              'element',
-              {
-                tagName: 'a',
-                properties: {href: '#fnref-1', className: ['footnote-backref']}
-              },
-              [u('text', '↩')]
-            )
+            u('text', '\n'),
+            u('element', {tagName: 'p', properties: {}}, [
+              u('text', 'bravo'),
+              u('text', ' '),
+              u(
+                'element',
+                {
+                  tagName: 'a',
+                  properties: {
+                    href: '#fnref-1',
+                    className: ['footnote-backref']
+                  }
+                },
+                [u('text', '↩')]
+              )
+            ]),
+            u('text', '\n')
           ]),
           u('text', '\n'),
           u('element', {tagName: 'li', properties: {id: 'fn-2'}}, [
-            u('text', 'charlie'),
-            u('text', ' '),
-            u(
-              'element',
-              {
-                tagName: 'a',
-                properties: {href: '#fnref-2', className: ['footnote-backref']}
-              },
-              [u('text', '↩')]
-            )
+            u('text', '\n'),
+            u('element', {tagName: 'p', properties: {}}, [
+              u('text', 'charlie'),
+              u('text', ' '),
+              u(
+                'element',
+                {
+                  tagName: 'a',
+                  properties: {
+                    href: '#fnref-2',
+                    className: ['footnote-backref']
+                  }
+                },
+                [u('text', '↩')]
+              )
+            ]),
+            u('text', '\n')
           ]),
           u('text', '\n')
         ]),
