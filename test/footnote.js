@@ -27,6 +27,7 @@ test('Footnote', function(t) {
           u('text', '\n'),
           u('element', {tagName: 'li', properties: {id: 'fn-1'}}, [
             u('text', 'bravo'),
+            u('text', ' '),
             u(
               'element',
               {
@@ -85,6 +86,7 @@ test('Footnote', function(t) {
           u('text', '\n'),
           u('element', {tagName: 'li', properties: {id: 'fn-1'}}, [
             u('text', 'bravo'),
+            u('text', ' '),
             u(
               'element',
               {
@@ -97,6 +99,7 @@ test('Footnote', function(t) {
           u('text', '\n'),
           u('element', {tagName: 'li', properties: {id: 'fn-2'}}, [
             u('text', 'charlie'),
+            u('text', ' '),
             u(
               'element',
               {
@@ -154,6 +157,7 @@ test('Footnote', function(t) {
             ]),
             u('text', '\n'),
             u('element', {tagName: 'p', properties: {}}, [
+              u('text', ' '),
               u(
                 'element',
                 {

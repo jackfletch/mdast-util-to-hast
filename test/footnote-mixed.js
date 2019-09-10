@@ -4,7 +4,7 @@ var test = require('tape')
 var u = require('unist-builder')
 var to = require('..')
 
-test('Footnote', function(t) {
+test('FootnoteMixed', function(t) {
   var mdast = to(
     u('root', [
       u('paragraph', [
@@ -58,6 +58,7 @@ test('Footnote', function(t) {
         u('text', '\n'),
         u('element', {tagName: 'li', properties: {id: 'fn-1'}}, [
           u('text', 'Charlie'),
+          u('text', ' '),
           u(
             'element',
             {
@@ -70,6 +71,7 @@ test('Footnote', function(t) {
         u('text', '\n'),
         u('element', {tagName: 'li', properties: {id: 'fn-x'}}, [
           u('text', 'Delta'),
+          u('text', ' '),
           u(
             'element',
             {

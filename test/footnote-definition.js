@@ -49,6 +49,7 @@ test('FootnoteDefinition', function(t) {
           u('text', '\n'),
           u('element', {tagName: 'li', properties: {id: 'fn-zulu'}}, [
             u('text', 'alpha'),
+            u('text', ' '),
             u(
               'element',
               {
